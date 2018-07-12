@@ -1,6 +1,6 @@
 require 'csv'
 
-csv_file = 'insert_csv.file here'
+csv_file = ['insert_csv.file'] # <-- insert your csv file here
 csv_text = File.read(csv_file)
 csv = CSV.parse(csv_text, :headers => true)
 
